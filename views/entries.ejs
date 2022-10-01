@@ -1,0 +1,19 @@
+<%- include('header') %>
+
+<h1><%= entries.title %></h1>
+
+<% entries.posts.forEach((post) => { %>
+<h2><%= post.title %></h2>
+<p><%= post.body %></p>
+<% }) %>
+
+<a class="btn btn-primary" href="/createEntry/<%=entries.title%>" role="button"
+  >Create New Entry</a
+>
+<a class="btn btn-primary" href="/" role="button">Home</a>
+
+<form action="/delete/<%=entries.title %>" method="post">
+  <button type="submit" class="btn btn-danger">Delete this post section</button>
+</form>
+
+<%- include('footer') %>

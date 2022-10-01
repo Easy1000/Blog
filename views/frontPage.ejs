@@ -1,0 +1,11 @@
+<%- include('header') %>
+
+<h1>Posts</h1>
+
+<% posts.forEach((post) => { %>
+    <a class="btn btn-primary" href="/posts/<%=post.title%>" role="button"><%= post.title %> </a>
+<% }) %> 
+
+<a class="btn btn-primary" href="/create" role="button">Create New</a>
+
+<%- include('footer') %>
