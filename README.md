@@ -1,3 +1,5 @@
 # Blog
 
-A simple blog app I did during online course
+A bare bone blog app
+
+(iseng bikin)
